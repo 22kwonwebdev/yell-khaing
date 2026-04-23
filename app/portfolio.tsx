@@ -85,28 +85,28 @@ export default function Portfolio() {
   ]
 
   const projects = [
-    {
-      title: "Edu Plus",
-      description:
-        "Edu Plus is a comprehensive school management system designed to simplify and automate daily operations for educational institutions. It offers tools for managing students, classes, attendance, grades, and schedules, while also improving communication among teachers, students, and parents—all within an intuitive and easy-to-use platform.",
-      tech: ["Laravel", "Vue.js", "MySQL"],
-      image: "/eduplus.png",
-      github: "#",
-      live: "https://www.eduplusmyanmar.com/",
-      featured: true,
-      status: "Live",
-    },
-    {
-      title: "BrianFit",
-      description:
-        "International school management website featuring a robust admin panel, integrated content management system (CMS), and automated mailing system. Enables administrators to efficiently manage school operations, publish updates",
-      tech: ["Laravel", "Filament", "MySQL"],
-      image: "/brainfit.png",
-      github: "#",
-      live: "#",
-      featured: true,
-      status: "Live",
-    },
+    // {
+    //   title: "Edu Plus",
+    //   description:
+    //     "Edu Plus is a comprehensive school management system designed to simplify and automate daily operations for educational institutions. It offers tools for managing students, classes, attendance, grades, and schedules, while also improving communication among teachers, students, and parents—all within an intuitive and easy-to-use platform.",
+    //   tech: ["Laravel", "Vue.js", "MySQL"],
+    //   image: "/eduplus.png",
+    //   github: "#",
+    //   live: "https://www.eduplusmyanmar.com/",
+    //   featured: true,
+    //   status: "Live",
+    // },
+    // {
+    //   title: "BrianFit",
+    //   description:
+    //     "International school management website featuring a robust admin panel, integrated content management system (CMS), and automated mailing system. Enables administrators to efficiently manage school operations, publish updates",
+    //   tech: ["Laravel", "Filament", "MySQL"],
+    //   image: "/brainfit.png",
+    //   github: "#",
+    //   live: "#",
+    //   featured: true,
+    //   status: "Live",
+    // },
     {
       title: "Siam Lotus",
       description:
@@ -115,7 +115,7 @@ export default function Portfolio() {
       image: "/siamlotus.png",
       github: "#",
       live: "https://siamlotusmm.com/",
-      featured: false,
+      featured: true,
       status: "Development",
     },
     {
@@ -126,7 +126,7 @@ export default function Portfolio() {
       image: "/tharabha.png",
       github: "#",
       live: "https://tharabha.com/",
-      featured: false,
+      featured: true,
       status: "Live",
     },
     {
