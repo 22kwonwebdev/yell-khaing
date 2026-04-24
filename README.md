@@ -1,6 +1,6 @@
 # Yell Khaing - Portfolio Website
 
-A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. This project showcases senior-level React development with comprehensive testing, error handling, and performance optimizations.
+A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## 🚀 Tech Stack
 
@@ -16,9 +16,7 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 - **[Framer Motion 12.15.0](https://www.framer.com/motion/)** - Animation library
 - **[Lucide React](https://lucide.dev/)** - Icon library
 
-### Development & Testing
-- **[Jest](https://jestjs.io/)** - Testing framework
-- **[React Testing Library](https://testing-library.com/react)** - Component testing
+### Development Tools
 - **[ESLint](https://eslint.org/)** - Code linting
 - **[pnpm](https://pnpm.io/)** - Package manager
 
@@ -39,7 +37,6 @@ yell-khaing/
 │   └── portfolio.tsx      # Main portfolio component
 ├── components/             # Reusable UI components
 │   ├── ui/                # shadcn/ui components (51+ items)
-│   ├── error-boundary.tsx # Error boundary component
 │   ├── loader.tsx         # Loading component
 │   ├── theme-provider.tsx # Theme provider wrapper
 │   └── theme-toggle.tsx   # Theme toggle button
@@ -47,11 +44,9 @@ yell-khaing/
 │   ├── use-mobile.tsx     # Mobile detection hook
 │   └── use-toast.ts       # Toast notification hook
 ├── lib/                    # Utility functions and helpers
-│   ├── utils.ts           # Utility functions
-│   └── error-logger.ts    # Error logging system
+│   └── utils.ts           # Utility functions
 ├── public/                 # Static assets
-├── styles/                 # Additional styles
-└── __tests__/             # Test files
+└── styles/                 # Additional styles
 ```
 
 ## 🛠️ Setup & Installation
@@ -90,27 +85,9 @@ pnpm dev              # Start development server
 pnpm build            # Build for production
 pnpm start            # Start production server
 pnpm lint             # Run ESLint
-
-# Testing
-pnpm test             # Run tests
-pnpm test:watch       # Run tests in watch mode
-pnpm test:coverage    # Run tests with coverage report
-pnpm test:ci          # Run tests for CI/CD
 ```
 
-## 🎯 Features
-
-- **🎨 Modern Design** - Clean, professional portfolio layout
-- **🌙 Dark/Light Theme** - System preference detection with manual toggle
-- **📱 Responsive Design** - Mobile-first approach with breakpoints
-- **♿ Accessibility** - ARIA labels, keyboard navigation, semantic HTML
-- **⚡ Performance** - Optimized images, lazy loading, code splitting
-- **🔒 Error Handling** - Comprehensive error boundaries and logging
-- **🧪 Testing** - Unit and integration tests with good coverage
-- **🎭 Animations** - Smooth transitions and micro-interactions
-- **📊 SEO Optimized** - Meta tags, structured data, sitemap ready
-
-## 🔧 Adding New Features
+##  Adding New Features
 
 ### 1. Adding New UI Components
 
@@ -201,31 +178,7 @@ pnpm test:ci          # Run tests for CI/CD
    }
    ```
 
-### 4. Adding Tests
-
-1. **Create test file:**
-   ```bash
-   touch __tests__/your-component.test.tsx
-   ```
-
-2. **Test structure:**
-   ```tsx
-   import { render, screen } from '@testing-library/react'
-   import { YourComponent } from '@/components/ui/your-component'
-   
-   describe('YourComponent', () => {
-   it('renders correctly', () => {
-     render(<YourComponent />)
-     expect(screen.getByRole('button')).toBeInTheDocument()
-   })
-   
-   it('handles user interactions', () => {
-     // Test user interactions
-   })
-   })
-   ```
-
-### 5. Environment Variables
+### 4. Environment Variables
 
 1. **Create `.env.local`** (add to `.gitignore`):
    ```env
@@ -237,26 +190,6 @@ pnpm test:ci          # Run tests for CI/CD
    ```tsx
    const apiUrl = process.env.NEXT_PUBLIC_API_URL
    ```
-
-## 🧪 Testing
-
-### Running Tests
-```bash
-# Run all tests
-pnpm test
-
-# Run tests in watch mode
-pnpm test:watch
-
-# Generate coverage report
-pnpm test:coverage
-```
-
-### Test Structure
-- **Unit Tests** - Individual component testing
-- **Integration Tests** - Component interaction testing
-- **Coverage Target** - 70% minimum coverage
-- **Test Files** - Located in `__tests__/` directory
 
 ## 🚀 Deployment
 
@@ -273,53 +206,6 @@ pnpm build
 # Start production server
 pnpm start
 ```
-
-## 🐛 Error Handling
-
-This project includes comprehensive error handling:
-
-- **Error Boundaries** - Catch and display React errors gracefully
-- **Error Logging** - Automatic error reporting in production
-- **Fallback UI** - User-friendly error displays
-- **Development Debugging** - Detailed error information in development
-
-## 📊 Performance
-
-### Optimization Features
-- **Image Optimization** - Next.js Image component
-- **Code Splitting** - Automatic bundle splitting
-- **Lazy Loading** - Component and route lazy loading
-- **CSS Optimization** - Tailwind CSS purging
-- **Bundle Analysis** - Built-in webpack bundle analyzer
-
-### Performance Monitoring
-```bash
-# Analyze bundle size
-pnpm build
-npx @next/bundle-analyzer
-
-# Lighthouse audit
-npx lighthouse http://localhost:3000
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact
-
-- **Portfolio**: [https://your-portfolio-url.com](https://your-portfolio-url.com)
-- **GitHub**: [https://github.com/yourusername](https://github.com/yourusername)
-- **LinkedIn**: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
 
 ---
 
