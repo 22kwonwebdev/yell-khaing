@@ -359,7 +359,7 @@ export default function Portfolio() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="group w-full sm:w-auto" asChild>
-                <a href="https://github.com/ykmss" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/22kwonwebdev" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   View GitHub
                 </a>
@@ -719,7 +719,7 @@ export default function Portfolio() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="group w-full sm:w-auto" asChild>
-                <a href="https://github.com/ykmss">
+                <a href="https://github.com/22kwonwebdev">
                   <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   GitHub
                 </a>
